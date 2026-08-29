@@ -33,6 +33,7 @@ function submitReport(event) {
   reportConfirmation.focus();
 }
 
+// Expands or collapses a notice on the Public Notice Board
 function toggleNotice(header) {
   const notice = header.closest('.notice');
   const open = notice.classList.toggle('open');
