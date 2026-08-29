@@ -18,23 +18,23 @@
 
 ## 2. Visual Plan
 
-**Mood and Tone:** Formal, official, gently absurd — a touch of humor and a touch of formality.
+**Mood and Tone:** Straight-faced bureaucracy with a wink — formal first, funny second. Classic government-document feel so the absurd cat copy lands harder.
 
 **Color Palette:**
-- Background: warm cream `#f7f2e7`
-- Primary Text: navy ink `#1e2b3a`
-- Brand Color: deep navy `#1e3a5f`
-- Accent: seal gold `#c9a227`
+- Background: warm paper cream `#F7F2E7`
+- Primary Text: near-black navy ink `#1E2B3A`
+- Brand Color: deep navy `#1E3A5F`
+- Accent: muted seal gold `#A8871D` (used sparingly for rules, borders, hovers — restrained and formal)
 
 **Typography:**
-- Heading Font: Georgia (serif — official feel)
+- Heading Font: Georgia (official serif)
 - Body Font: system-ui sans-serif
 
-**Layout Approach:** Single centered column (max-width ~960px), sticky top navigation, gold rules under headings, card-based sections.
+**Layout Approach:** Sticky top bar (crest + navy wordmark + nav links); centered single column (max-width ~960px); section headings with a muted-gold underline rule; cards for the fines table and notice board; numbered gold-bordered steps for inspections. Hero is a light "crest hero" (cream/paper background) with a large navy serif title — a formal document cover feel — and a dark navy footer bookend.
 
-**Images & Graphics Style:** No photos — a simple inline SVG cat crest and clean, line-style touches.
+**Images & Graphics Style:** No photos or external assets — a larger, refined inline SVG cat crest (paw-in-a-ring) as the hero centerpiece, reused in the header.
 
-**Button & UI Style:** Flat navy buttons with gold hover accent, rounded corners; form fields with formal labels.
+**Button & UI Style:** Flat navy buttons with muted-gold hover; gold hero CTA; subtle rounded corners and thin borders — official, not scary. Form fields with formal labels.
 
 ---
 
