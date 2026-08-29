@@ -40,6 +40,7 @@ function toggleNotice(header) {
   header.setAttribute('aria-expanded', String(open));
 }
 
+// Sums the selected offenses and displays the total fine and verdict
 function calculateFines(event) {
   event.preventDefault();
   const checked = document.querySelectorAll('#audit-form input:checked');
