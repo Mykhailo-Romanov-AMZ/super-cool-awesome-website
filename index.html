@@ -3,14 +3,249 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <title>Ministry of Feline Affairs</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top">
+        <svg class="crest" viewBox="0 0 64 64" width="40" height="40" aria-hidden="true" focusable="false">
+          <circle cx="32" cy="32" r="29" fill="none" stroke="currentColor" stroke-width="3"/>
+          <ellipse cx="32" cy="38" rx="11" ry="9" fill="currentColor"/>
+          <circle cx="23" cy="24" r="4" fill="currentColor"/>
+          <circle cx="41" cy="24" r="4" fill="currentColor"/>
+          <circle cx="18" cy="33" r="4" fill="currentColor"/>
+          <circle cx="46" cy="33" r="4" fill="currentColor"/>
+        </svg>
+        <span class="brand-text">Ministry of Feline Affairs</span>
+      </a>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#regulations">Regulations</a></li>
+          <li><a href="#inspections">Inspections</a></li>
+          <li><a href="#notices">Notices</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <h1>My Website</h1>
-  <p>Your content will go here.</p>
+  <main id="top">
+    <section class="hero">
+      <svg class="crest hero-crest" viewBox="0 0 64 64" width="96" height="96" aria-hidden="true" focusable="false">
+        <circle cx="32" cy="32" r="29" fill="none" stroke="currentColor" stroke-width="3"/>
+        <ellipse cx="32" cy="38" rx="11" ry="9" fill="currentColor"/>
+        <circle cx="23" cy="24" r="4" fill="currentColor"/>
+        <circle cx="41" cy="24" r="4" fill="currentColor"/>
+        <circle cx="18" cy="33" r="4" fill="currentColor"/>
+        <circle cx="46" cy="33" r="4" fill="currentColor"/>
+      </svg>
+      <p class="hero-kicker">Department of Whisker Compliance &amp; Public Felinity</p>
+      <h1>Ministry of Feline Affairs</h1>
+      <p class="hero-text">
+        Serving cats and their lawful caretakers since 1453 (allegedly). All felines shall be
+        registered, inspected, and — above all — admired.
+      </p>
+      <a class="button button-gold" href="#regulations">Review the Regulations</a>
+    </section>
 
+    <div class="container">
+      <section id="mission" class="section">
+        <h2 class="section-title">Chapter I — Our Mission</h2>
+        <p>
+          Established to uphold the majesty of the feline everywhere. The Ministry ensures every
+          whisker is accounted for, every nap is approved without delay, and every humble servant
+          of a cat abides by the gentle rules of the realm.
+        </p>
+        <ul class="stats">
+          <li class="stat">
+            <span class="stat-number">3.2M</span>
+            <span class="stat-label">Whiskers registered</span>
+          </li>
+          <li class="stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Approved nap rate</span>
+          </li>
+          <li class="stat">
+            <span class="stat-number">0</span>
+            <span class="stat-label">Unsolicited inspections</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="regulations" class="section">
+        <h2 class="section-title">Chapter II — Licensing &amp; Regulations</h2>
+        <p>
+          Every feline citizen and their caretaker are subject to the schedule of penalties below.
+          Ignorance of the law is no defense, though a compliant tail may be considered.
+        </p>
+        <div class="table-wrap">
+          <table class="fines-table">
+            <thead>
+              <tr>
+                <th scope="col">Offense</th>
+                <th scope="col">Fine</th>
+                <th scope="col">Docket</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Failure to present a treat upon request</td>
+                <td>$50</td>
+                <td>Form 9-A</td>
+              </tr>
+              <tr>
+                <td>Unattended laser pointer within reach</td>
+                <td>$75</td>
+                <td>Form 11-C</td>
+              </tr>
+              <tr>
+                <td>Catnap report filed after opening hours</td>
+                <td>$100</td>
+                <td>Form 2-B</td>
+              </tr>
+              <tr>
+                <td>Unlicensed theft of a sunbeam</td>
+                <td>$250</td>
+                <td>Form 14-G</td>
+              </tr>
+              <tr>
+                <td>Conspicuous absence of a cardboard box</td>
+                <td>Form 7-B required</td>
+                <td>Awaiting review</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="inspections" class="section">
+        <h2 class="section-title">Chapter III — Inspection Procedure</h2>
+        <p>
+          Standard inspections occur without notice and at the inspector's discretion.
+          The following is the official procedure and is not subject to negotiation.
+        </p>
+        <ol class="steps">
+          <li class="step">
+            <h3>Scheduled Observation</h3>
+            <p>The inspector (a cat) positions themselves in a location of maximum visibility.</p>
+          </li>
+          <li class="step">
+            <h3>Sofa &amp; Box Audit</h3>
+            <p>All resting surfaces are tested. Findings are final and binding.</p>
+          </li>
+          <li class="step">
+            <h3>Temperament Notation</h3>
+            <p>Attitude is recorded. Favorable notes affect future treat allocations.</p>
+          </li>
+          <li class="step">
+            <h3>Official Stamping</h3>
+            <p>A pawprint is applied to the report. The inspector then departs for a nap.</p>
+          </li>
+        </ol>
+        <p class="fine-print">Note: inspectors have never been observed by the public. Inspectors are cats.</p>
+      </section>
+
+      <section id="notices" class="section">
+        <h2 class="section-title">Public Notice Board</h2>
+        <p>Recent communiques from the Ministry. Click a notice to review its full text.</p>
+
+        <div class="notice">
+          <button class="notice-header" aria-expanded="false">
+            Notice 12-4: Mouse Reporting Quotas
+          </button>
+          <div class="notice-body">
+            <p>
+              Field mouse reporting quotas are temporarily suspended while the Ministry reviews
+              current headcounts. Voluntary reports are, as always, enthusiastically accepted.
+            </p>
+          </div>
+        </div>
+
+        <div class="notice">
+          <button class="notice-header" aria-expanded="false">
+            Notice 09-2: Keyboard Placement Guidance
+          </button>
+          <div class="notice-body">
+            <p>
+              The Ministry reminds citizens that the proper place for a cat is on the wrong side
+              of the keyboard. Deviation from this guidance may result in delayed deliverables.
+            </p>
+          </div>
+        </div>
+
+        <div class="notice">
+          <button class="notice-header" aria-expanded="false">
+            Notice 03-8: Sunbeam Allocations
+          </button>
+          <div class="notice-body">
+            <p>
+              Sunbeam allocations are final and binding. Priority is awarded on a first-come,
+              first-slept basis. Complaints will be redirected to the complaints department,
+              which is also a cat.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2 class="section-title">File a Report</h2>
+        <p>
+          Praise, complaints, and other communications may be filed below. All reports are
+          reviewed by the appropriate paw.
+        </p>
+
+        <form id="report-form" class="report-form">
+          <div class="form-field">
+            <label for="report-name">Full name</label>
+            <input id="report-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-field">
+            <label for="report-email">Email</label>
+            <input id="report-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-field">
+            <label for="report-subject">Subject</label>
+            <select id="report-subject" name="subject">
+              <option>Compliment</option>
+              <option>Complaint</option>
+              <option>Unsolicited opinion</option>
+              <option>Treat deficiency report</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="report-message">Message</label>
+            <textarea id="report-message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="button" type="submit">File Report</button>
+        </form>
+
+        <div id="report-confirmation" class="report-confirmation hidden" tabindex="-1">
+          <h3>Report Received</h3>
+          <p>
+            Your report has been received and logged with the Bureau of Purrspondence. Please
+            allow 2–3 business days for review (realistically, never).
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Ministry of Feline Affairs. All whiskers reserved.</p>
+    <p>
+      Bureau of Purrspondence &middot; 1 Catnip Row, The Couch District<br>
+      Operated by and for cats. No cats were harmed in the construction of this website.
+    </p>
+  </footer>
 </body>
 </html>
