@@ -25,6 +25,7 @@ function toggleNav() {
   navToggle.setAttribute('aria-expanded', String(open));
 }
 
+// Hides the form and shows the official report receipt
 function submitReport(event) {
   event.preventDefault();
   reportForm.classList.add('hidden');
