@@ -49,6 +49,7 @@ function calculateFines(event) {
   auditTotal.focus();
 }
 
+// Picks a random decree and displays it in the proclamation panel
 function issueDecree() {
   const index = Math.floor(Math.random() * decrees.length);
   decreeText.textContent = decrees[index];
