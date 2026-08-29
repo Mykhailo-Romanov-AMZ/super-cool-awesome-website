@@ -19,6 +19,7 @@ const decrees = [
   'Meetings shall be conducted entirely from atop the conference table.',
 ];
 
+// Toggles the mobile navigation menu open and closed
 function toggleNav() {
   const open = siteNav.classList.toggle('nav-open');
   navToggle.setAttribute('aria-expanded', String(open));
