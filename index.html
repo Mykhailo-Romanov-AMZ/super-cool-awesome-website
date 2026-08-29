@@ -126,6 +126,37 @@
             </tbody>
           </table>
         </div>
+
+        <div class="audit">
+          <h3>Citizen Self-Audit</h3>
+          <p>
+            Select any offenses you may have committed. Confession is not required, but it is
+            encouraged — the Ministry thanks you for your honesty.
+          </p>
+          <form id="audit-form" class="audit-form">
+            <label class="audit-item">
+              <input type="checkbox" name="offense" value="50">
+              Failure to present a treat upon request
+            </label>
+            <label class="audit-item">
+              <input type="checkbox" name="offense" value="75">
+              Unattended laser pointer within reach
+            </label>
+            <label class="audit-item">
+              <input type="checkbox" name="offense" value="100">
+              Catnap report filed after opening hours
+            </label>
+            <label class="audit-item">
+              <input type="checkbox" name="offense" value="250">
+              Unlicensed theft of a sunbeam
+            </label>
+            <button class="button" type="submit">Calculate Penalties</button>
+          </form>
+          <div id="audit-total" class="audit-total hidden" tabindex="-1">
+            <p class="audit-amount">Total fines owed: <strong id="audit-total-amount">$0</strong></p>
+            <p id="audit-verdict" class="audit-verdict"></p>
+          </div>
+        </div>
       </section>
 
       <section id="inspections" class="section">
@@ -193,6 +224,19 @@
               first-slept basis. Complaints will be redirected to the complaints department,
               which is also a cat.
             </p>
+          </div>
+        </div>
+
+        <div class="decree">
+          <h3>Emergency Decree Facility</h3>
+          <p>
+            For urgent business, the Ministry maintains a facility for the immediate issuance
+            of proclamations. Issuance is swift; reconsideration is not.
+          </p>
+          <button id="decree-button" class="button button-gold" type="button">Issue Emergency Decree</button>
+          <div id="decree-output" class="decree-output hidden" tabindex="-1">
+            <p class="decree-label">Proclamation</p>
+            <p id="decree-text" class="decree-text"></p>
           </div>
         </div>
       </section>

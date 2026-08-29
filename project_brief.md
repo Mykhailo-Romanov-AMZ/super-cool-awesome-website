@@ -44,7 +44,7 @@
 - **Interaction Name:** Mobile navigation toggle
 - **Visitor Action:** Clicks the menu button on small screens
 - **Page Response:** The navigation menu expands/collapses
-- **HTML Elements:** `#nav-toggle` button, `#site-nav` menu
+- **HTML Elements (provisional):** `#nav-toggle` button, `#site-nav` menu
 - **JS Event:** `click`
 - **Function Name:** `toggleNav`
 - **CSS Class Toggled:** `.nav-open`
@@ -53,7 +53,7 @@
 - **Interaction Name:** Report form submission
 - **Visitor Action:** Fills in and submits the contact form
 - **Page Response:** The form is hidden and an official "receipt" confirmation is shown
-- **HTML Elements:** `#report-form`, `#report-confirmation`
+- **HTML Elements (provisional):** `#report-form`, `#report-confirmation`
 - **JS Event:** `submit`
 - **Function Name:** `submitReport`
 - **CSS Class Toggled:** `.hidden`
@@ -62,23 +62,41 @@
 - **Interaction Name:** Notice accordion
 - **Visitor Action:** Clicks a notice heading on the Public Notice Board
 - **Page Response:** The notice body expands or collapses
-- **HTML Elements:** `button.notice-header`, parent `.notice` block
+- **HTML Elements (provisional):** `button.notice-header`, parent `.notice` block
 - **JS Event:** `click`
 - **Function Name:** `toggleNotice`
 - **CSS Class Toggled:** `.open`
+
+### Interaction 4
+- **Interaction Name:** Citizen fine self-audit
+- **Visitor Action:** Checks off offenses (with fines) in the regulations section and clicks "Calculate Penalties"
+- **Page Response:** A running fine total and an official verdict appear
+- **HTML Elements (provisional):** `#audit-form` checkboxes, `#audit-total` result panel
+- **JS Event:** `submit`
+- **Function Name:** `calculateFines`
+- **CSS Class Toggled:** `.hidden`
+
+### Interaction 5
+- **Interaction Name:** Random decree generator
+- **Visitor Action:** Clicks "Issue Emergency Decree" on the Public Notice Board
+- **Page Response:** A randomly chosen official proclamation is displayed in a formal decree panel
+- **HTML Elements (provisional):** `#decree-button`, `#decree-output`, `#decree-text`
+- **JS Event:** `click`
+- **Function Name:** `issueDecree`
+- **CSS Class Toggled:** `.hidden`
 
 ---
 
 ## 4. Architecture Plan
 
 **HTML Structure Plan:**
-`header` (brand, nav, toggle button) → `main` → `section.hero` → `section#mission` → `section#regulations` (fines table) → `section#inspections` (numbered steps) → `section#notices` (accordion) → `section#contact` (form + confirmation) → `footer`. Semantic elements with ids/classes matching the interactions above.
+`header` (brand, nav, toggle button) → `main` → `section.hero` → `section#mission` → `section#regulations` (fines table + self-audit form) → `section#inspections` (numbered steps) → `section#notices` (accordion + decree facility) → `section#contact` (form + confirmation) → `footer`. Semantic elements with ids/classes matching the interactions above.
 
 **CSS Architecture Plan:**
-Custom properties in `:root`, a light reset, sticky header, hero, section headings with gold rules, cards, fines table, accordion, form styles, footer, then a mobile media query for the navigation.
+Custom properties in `:root`, a light reset, sticky header, hero, section headings with gold rules, cards, fines table, self-audit list, accordion, decree panel, form styles, footer, then a mobile media query for the navigation.
 
 **JavaScript Function Map:**
-`toggleNav`, `submitReport`, `toggleNotice`, plus an `init` the wires each listener on load.
+`toggleNav`, `submitReport`, `toggleNotice`, `calculateFines`, `issueDecree`, plus an `init` that wires each listener on load.
 
 **Implementation Steps:**
 1) Complete this brief  2) Build `index.html`  3) Style with `styles.css`  4) Add behavior with `script.js`  5) Verify it loads and behaves correctly.
