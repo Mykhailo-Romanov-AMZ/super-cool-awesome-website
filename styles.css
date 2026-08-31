@@ -160,6 +160,69 @@ body {
   color: var(--muted);
 }
 
+.hero-photo,
+.cat-photo {
+  margin: 0 auto 1.75rem;
+}
+
+.hero-photo {
+  max-width: 420px;
+}
+
+.cat-photo {
+  max-width: 360px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hero-photo img,
+.cat-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 3px solid var(--accent);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(30, 43, 58, 0.2);
+}
+
+figure figcaption {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* Staff roster gallery */
+.roster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.gallery-photo {
+  margin: 0;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.75rem 0.75rem 1rem;
+}
+
+.gallery-photo img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  border: 2px solid var(--accent);
+  border-radius: 4px;
+}
+
+.gallery-photo figcaption {
+  font-size: 0.82rem;
+  margin-top: 0.6rem;
+}
+
 /* Buttons */
 .button {
   display: inline-block;

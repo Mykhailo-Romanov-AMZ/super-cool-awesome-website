@@ -1,0 +1,20 @@
+# Secret / credential files
+.env
+.env.*
+*.pem
+*.key
+*.p12
+
+# Local config & log files
+*.log
+config.yml
+hosts.yml
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+
+# Dependency folders (if this project ever grows one)
+node_modules/
+venv/
