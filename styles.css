@@ -272,6 +272,43 @@ figure figcaption {
   border: 1px solid var(--line);
 }
 
+/* Official supporters */
+.supporters-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.supporter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  flex: 1 1 84px;
+  max-width: 110px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.6rem 0.4rem 0.5rem;
+}
+
+.supporter img {
+  width: 64px;
+  height: 43px;
+  object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(30, 43, 58, 0.25);
+  display: block;
+}
+
+.supporter span {
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-align: center;
+}
+
 /* Buttons */
 .button {
   display: inline-block;

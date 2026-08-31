@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" role="img" aria-label="United Nations">
+  <rect width="30" height="20" fill="#4B92DB"/>
+  <g stroke="#FFFFFF" fill="none" stroke-width="1.2">
+    <circle cx="15" cy="10" r="5.2"/>
+    <line x1="9.8" y1="10" x2="20.2" y2="10"/>
+    <path d="M11.2 6.4 A6 6 0 0 1 18.8 6.4" />
+    <path d="M11.2 13.6 A6 6 0 0 0 18.8 13.6" />
+  </g>
+</svg>
