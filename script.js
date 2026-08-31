@@ -43,7 +43,7 @@ function toggleNotice(header) {
 // Sums the selected offenses and displays the total fine and verdict
 function calculateFines(event) {
   event.preventDefault();
-  const checked = document.querySelectorAll('#audit-form input:checked');
+  const checked = auditForm.querySelectorAll('input:checked');
   const total = Array.from(checked).reduce((sum, box) => sum + Number(box.value), 0);
   auditTotalAmount.textContent = '$' + total;
   auditVerdict.textContent = total === 0
