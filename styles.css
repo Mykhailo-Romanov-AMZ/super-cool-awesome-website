@@ -195,14 +195,16 @@ figure figcaption {
 
 /* Staff roster gallery */
 .roster-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.25rem;
   margin-top: 1.5rem;
 }
 
 .gallery-photo {
   margin: 0;
+  flex: 1 1 200px;
+  max-width: 300px;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -211,7 +213,7 @@ figure figcaption {
 
 .gallery-photo img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  height: 200px;
   object-fit: cover;
   display: block;
   border: 2px solid var(--accent);
@@ -225,18 +227,21 @@ figure figcaption {
 
 /* Careers */
 .jobs {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.25rem;
   margin: 1.5rem 0;
 }
 
 .job {
+  flex: 1 1 240px;
+  max-width: 360px;
   background: var(--card);
   border: 1px solid var(--line);
   border-left: 4px solid var(--accent);
   border-radius: 8px;
   padding: 1.1rem 1.25rem;
+  box-sizing: border-box;
 }
 
 .job h3 {
