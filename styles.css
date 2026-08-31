@@ -234,14 +234,8 @@ figure figcaption {
 }
 
 .distinguished-grid .gallery-photo {
-  flex: 0 0 calc((100% - 5rem) / 5);
+  flex: 0 0 calc((100% - 2.5rem) / 3);
   max-width: none;
-}
-
-@media (max-width: 900px) {
-  .distinguished-grid .gallery-photo {
-    flex-basis: calc((100% - 2.5rem) / 3);
-  }
 }
 
 @media (max-width: 600px) {
