@@ -8,11 +8,11 @@
 
 **Target Audience:** Cat owners, cat fans, and cat-adjacent citizens who enjoy official-tone humor. Presented with a polished, corporate/government-friendly aesthetic.
 
-**Visitor Outcome:** Visitors are entertained by the official tone, learn the "regulations," and file a report through the contact form.
+**Visitor Outcome:** Visitors are entertained by the official tone, review the "regulations," complete a self-audit, browse the 100-cat staff roster, and file a report through the contact form.
 
-**Three Main Sections:** Mission, Licensing & Regulations, Inspections — plus a Public Notice Board and a Contact form.
+**Three Main Sections:** Mission (+ Official Supporters), Licensing & Regulations (+ Citizen Self-Audit), Inspections — plus a Public Notice Board (with Emergency Decree Facility), a 100-cat Staff Roster, a Careers section, and a Contact form.
 
-**Key Highlight:** The official fines table and the straight-faced bureaucratic copy.
+**Key Highlight:** The official fines table, the 100-cat staff roster, and the straight-faced bureaucratic copy.
 
 ---
 
@@ -30,9 +30,9 @@
 - Heading Font: Georgia (official serif)
 - Body Font: system-ui sans-serif
 
-**Layout Approach:** Sticky top bar (crest + navy wordmark + nav links); centered single column (max-width ~960px); section headings with a muted-gold underline rule; cards for the fines table and notice board; numbered gold-bordered steps for inspections. Hero is a light "crest hero" (cream/paper background) with a large navy serif title — a formal document cover feel — and a dark navy footer bookend.
+**Layout Approach:** Sticky top bar (crest + navy wordmark + nav links); centered single column (max-width ~960px); section headings with a muted-gold underline rule; cards for the fines table, notice board, and job openings; numbered gold-bordered steps for inspections; a responsive grid for the roster gallery and the supporters strip. Hero is a light "crest hero" (cream/paper background) with a large navy serif title and a framed official portrait — a formal document cover feel — and a dark navy footer bookend.
 
-**Images & Graphics Style:** No photos or external assets — a larger, refined inline SVG cat crest (paw-in-a-ring) as the hero centerpiece, reused in the header.
+**Images & Graphics Style:** Self-contained — inline SVG cat crest (header + hero), local cat photographs (hero portrait, mission registry photo, and a 100-photo staff roster), and local flag/insignia badges (Australia, US, UK, UN, NATO, Asia-Pacific, China, Germany, South Korea, Japan). No external hotlinks. Photos are crop-covered squares framed in muted gold; all images carry descriptive `alt` text.
 
 **Button & UI Style:** Flat navy buttons with muted-gold hover; gold hero CTA; subtle rounded corners and thin borders — official, not scary. Form fields with formal labels.
 
@@ -90,10 +90,10 @@
 ## 4. Architecture Plan
 
 **HTML Structure Plan:**
-`header` (brand, nav, toggle button) → `main` → `section.hero` → `section#mission` → `section#regulations` (fines table + self-audit form) → `section#inspections` (numbered steps) → `section#notices` (accordion + decree facility) → `section#contact` (form + confirmation) → `footer`. Semantic elements with ids/classes matching the interactions above.
+`header` (brand, nav, toggle button) → `main` → `section.hero` (portrait figure) → `section#mission` (stats + registry figure) → `section#supporters` (flag/insignia row) → `section#regulations` (fines table + self-audit form) → `section#inspections` (numbered steps) → `section#notices` (accordion + decree facility) → `section#gallery` (100-photo roster grid) → `section#careers` (job cards) → `section#contact` (form + confirmation) → `footer`. Semantic elements with ids/classes matching the interactions above.
 
 **CSS Architecture Plan:**
-Custom properties in `:root`, a light reset, sticky header, hero, section headings with gold rules, cards, fines table, self-audit list, accordion, decree panel, form styles, footer, then a mobile media query for the navigation.
+Custom properties in `:root`, a light reset, sticky header, hero, section headings with gold rules, cards, fines table, self-audit list, accordion, decree panel, photo framing, roster gallery grid, supporters strip, careers cards, form styles, footer, then a mobile media query for the navigation.
 
 **JavaScript Function Map:**
 `toggleNav`, `submitReport`, `toggleNotice`, `calculateFines`, `issueDecree`, plus an `init` that wires each listener on load.
