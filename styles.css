@@ -225,6 +225,31 @@ figure figcaption {
   margin-top: 0.6rem;
 }
 
+/* Distinguished employees */
+.distinguished-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.distinguished-grid .gallery-photo {
+  flex: 0 0 calc((100% - 5rem) / 5);
+  max-width: none;
+}
+
+@media (max-width: 900px) {
+  .distinguished-grid .gallery-photo {
+    flex-basis: calc((100% - 2.5rem) / 3);
+  }
+}
+
+@media (max-width: 600px) {
+  .distinguished-grid .gallery-photo {
+    flex-basis: calc((100% - 1.25rem) / 2);
+  }
+}
+
 /* Careers */
 .jobs {
   display: flex;
